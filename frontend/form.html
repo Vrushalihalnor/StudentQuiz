@@ -1,0 +1,55 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz Form</title>
+        <script src="form.js" defer></script>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+                padding: 20px;
+                background-color: #f4f4f4;
+            }
+            .quiz-container {
+                max-width: 600px;
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px #ccc;
+            }
+            .question {
+                font-weight: bold;
+            }
+            .options {
+                margin-bottom: 15px;
+            }
+            .correct {
+                /* color: green; */
+                font-weight: bold;
+            }
+            .wrong {
+                /* color: red; */
+                font-weight: bold;
+            }
+            .submit-btn {
+                background-color: #28a745;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="quiz-container">
+            <form id="quizForm">
+                <div id="quiz"></div>
+                <button type="button" class="submit-btn" onclick="checkAnswers()">Submit</button>
+            </form>
+            <div id="result"></div>
+        </div>
+    </body>
+    </html>

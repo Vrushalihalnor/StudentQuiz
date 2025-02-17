@@ -2,7 +2,7 @@ let quizData = []; // Global variable to store quiz data
 
 async function fetchQuizData() {
     try {
-        const response = await fetch("http://localhost:3000/api/questions");
+        const response = await fetch(`http://localhost:3000/api/uestions`, { mode: 'no-cors' });
         quizData = await response.json(); // Store fetched data in global variable
         displayQuiz(quizData);
     } catch (error) {
